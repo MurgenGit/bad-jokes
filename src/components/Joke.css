@@ -44,3 +44,64 @@
   margin-left: auto;
   border-radius: 50%;
 }
+
+.fa-arrow-up:hover {
+  animation-name: move-up;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  color: #8bc34a;
+}
+
+@keyframes move-up {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(-3px);
+  }
+}
+.fa-arrow-down:hover {
+  animation-name: move-down;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  color: #f44336;
+}
+@keyframes move-down {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25%,
+  75% {
+    transform: translateY(3px);
+  }
+}
+
+.Joke-smile:hover {
+  animation-name: spin;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
